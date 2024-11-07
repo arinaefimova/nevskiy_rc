@@ -1,0 +1,83 @@
+.contacts {
+    margin-top: 110px;
+    position: relative;
+    &::before{
+        content:'';
+        position: absolute;
+       bottom: 0;
+       left: 0;
+       height: 465px;
+       width: 518px;
+       background: url('/img/icons/dec2.png') 0 0 no-repeat;
+    }
+
+    &__wrapper {
+        width: 100%;
+        border-top: 1px solid #FEE4A5;
+        border-bottom: 1px solid #FEE4A5;
+        padding: 48px 0;
+        position: relative;
+        &::before{
+            content:'';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 1px;
+            height: 100%;
+            background-color: #FEE4A5;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        height: 100%;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        flex: 0 1 50%;
+        padding-right: 55px;
+    }
+
+    &__form {
+        flex: 0 1 50%;
+        padding-left: 55px;
+
+        div{
+            display: flex;
+            flex-direction: column-reverse;
+            &:not(:first-child) {
+                padding-top: 24px;
+            }
+            sup{
+                color: #FF5959;
+            }
+            label{
+                font-family: Nunito Sans;
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 22px;
+
+            }
+            input{
+                width: 100%;
+                border-bottom: 1px solid #FEE4A5;
+                padding-bottom: 15px;
+                &::placeholder{
+                    font-family: Nunito Sans;
+                font-size: 20px;
+                font-weight: 300;
+
+                }
+            }
+        }
+       
+    
+
+    }
+
+    &__button {
+        margin-top: 48px;
+    }
+}
+

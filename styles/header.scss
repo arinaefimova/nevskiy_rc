@@ -1,0 +1,51 @@
+.header {
+    position: relative;
+    &::before{
+        content:'';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        height: 12px;
+        background: url('/img/icons/line-top.svg') 50% 0/cover   no-repeat;
+
+    }
+ 
+
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0 10px;
+        padding: 30px 0;
+        
+    }
+
+    &__logo {
+    }
+
+    &__contacts {
+    }
+}
+.container {
+}
+.contacts-header {
+    display: flex;
+    align-items: center;
+    gap: 0 24px;
+
+    &__item {
+    }
+
+    &__link {
+        color: #FEE4A5 !important;
+        @media (any-hover: hover){
+            &:hover{
+                text-decoration: underline;
+                text-underline-offset: 2px;
+            }
+        }
+    }
+}

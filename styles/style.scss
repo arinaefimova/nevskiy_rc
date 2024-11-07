@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,regular,italic,700&display=swap&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:regular&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,regular,500,700,300italic&display=swap&subset=cyrillic");
+@import url('https://fonts.googleapis.com/css?family=Inter:300&display=swap&subset=cyrillic');
+@import "./reset.css";
+
+body {
+	font-family: 'Lato';
+	font-size: 18px;
+	line-height: 21px;
+	color: #fff;
+	background-color: #1e2827;
+
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+main {
+	flex: 1 1 auto;
+}
+
+.container {
+	max-width: 1270px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.title {
+	font-size: 60px;
+	font-family: Playfair Display;
+	line-height: 63px;
+	color: #fafafa;
+}
+.link {
+	font-size: 24px;
+    white-space: nowrap;
+	color: #fee4a5 !important;
+	text-transform: uppercase;
+	position: relative;
+	display: inline-block;
+	line-height: 28px;
+    font-family: Nunito Sans;
+
+	transition: all 0.3s;
+	&:not(:last-child) {
+		margin-bottom: 16px;
+        
+	}
+    &_und{
+
+        &::before {
+            content: "";
+            width: calc(100% + 33px);
+            height: 1px;
+            background-color: #fee4a5;
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+        }
+    }
+	&::after {
+		content: "";
+		width: 24px;
+		height: 24px;
+		position: absolute;
+		top: 2px;
+		right: -33px;
+		background: url("/img/icons/arrow_right.svg") 0 0 no-repeat;
+	}
+}
+.error {
+    border-bottom: 2px solid red !important;
+}
+
+
+@import "./header.scss";
+@import "./first-block.scss";
+@import "./second-block.scss";
+@import "./third-block.scss";
+@import "./most-important.scss";
+@import "./catalog.scss";
+@import "./checkbox.scss";
+@import "./partners.scss";
+@import "./certificates.scss";
+@import "./map.scss";
+@import "./contacts.scss";
+@import "./footer.scss";
+

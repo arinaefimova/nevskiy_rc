@@ -1,0 +1,64 @@
+.second {
+    margin-top: 110px;
+    position: relative;
+    &::before{
+        content:'';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: url('/img/icons/dec1.png') 0 0 no-repeat;
+        height: 430px;
+        width: 351px;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: flex-start;
+        gap: 0 40px;
+        padding-left: max(15px, calc((100% - 1240px) / 2));
+    }
+
+    &__content {
+        flex-shrink: 0;
+
+
+
+		width: calc(100% - 915px - 40px);
+    }
+
+    &__list {
+        border-top: 1px solid #FEE4A5;
+        border-left: 1px solid #FEE4A5;
+        padding: 40px;
+        margin-bottom: 20px;
+        font-family: Nunito Sans;
+
+    }
+
+    &__item {
+        font-style: italic;
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__title {
+        width: 590px;
+        position: relative;
+        z-index: 5;
+    }
+
+    &__image {
+        width: 915px;
+        position: relative;
+        padding-bottom: 43%;
+		img {
+			position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+		}
+    }
+}

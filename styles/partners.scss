@@ -1,0 +1,46 @@
+.partners {
+	margin-top: 110px;
+
+	&__header {
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		margin-bottom: 75px;
+	}
+
+	&__block {
+        position: relative;
+	}
+	&__slider {
+		max-width: 840px;
+		margin: 0 auto;
+	}
+}
+
+.next,
+.prev {
+	position: absolute;
+    width: 48px;
+    height: 48px;
+	top: 50%;
+	z-index: 6;
+	transform: translate(0, -50%);
+}
+.next {
+	right: 0;
+}
+.prev {
+    left: 0;
+}
+
+.swiper-wrapper {
+	align-items: center;
+}
+
+.swiper-slide {
+	text-align: center;
+
+	img {
+		width: 232px;
+	}
+}
