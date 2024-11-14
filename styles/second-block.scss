@@ -10,13 +10,13 @@
 		position: absolute;
 		bottom: 0;
 		left: 0;
-		background: url("img/icons/dec1.png") 0 0 no-repeat;
+		background: url("../img/icons/dec1.png") 0 0 no-repeat;
 		height: 430px;
 		width: 351px;
 	}
 	@media (max-width: 1200px) {
 		&::before {
-			background: url("img/icons/dec1-min.png") 0 0 / contain no-repeat;
+			background: url("../img/icons/dec1-min.png") 0 0 / contain no-repeat;
 			width: 91px;
 			height: 112px;
 			left: 15px;
