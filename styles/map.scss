@@ -1,9 +1,16 @@
 .map{
-    margin-top: 54px;
     width: 100%;
     position: relative;
     padding-bottom: 40%;
-    
+    @media (max-width: 910px){
+          padding-bottom: 55%;
+    }
+    @media (max-width: 768px){
+          padding-bottom: 70%;
+    }
+    @media (max-width: 480px){
+          padding-bottom: 130%;
+    }
 }
 #map{
     width: 100%;

@@ -5,35 +5,42 @@
 		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="/styles/style.scss" />
-        <script src="https://api-maps.yandex.ru/v3/?apikey=30782ab6-af33-487f-aa17-1a11a0c4ac62&lang=ru_RU"></script>
+		<script src="https://api-maps.yandex.ru/v3/?apikey=30782ab6-af33-487f-aa17-1a11a0c4ac62&lang=ru_RU"></script>
 		<title>Vite App</title>
 	</head>
 	<body>
 		<!--HEADER -->
 		<header class="header">
-			<div class="container">
+			<div class="container header__container">
 				<div class="header__wrapper">
 					<a href="#" class="header__logo">
 						<img src="/img/logo.svg" alt="logo" />
 					</a>
-					<ul class="header__contacts contacts-header">
-						<li class="contacts-header__item">
-							<a href="tel:74822691883" class="contacts-header__link"
-								>+7 (482) 269-18-83</a
-							>
-						</li>
-						<li class="contacts-header__item">
-							<a href="#" class="contacts-header__link">
-								<img src="/img/icons/whatsapp.svg" alt="whatsapp" />
-							</a>
-						</li>
-						<li class="contacts-header__item">
-							<a href="#" class="contacts-header__link">
-								<img src="/img/icons/tg.svg" alt="tg" />
-							</a>
-						</li>
-					</ul>
+                    <div class="header__menu menu">
+                        
+                        <nav class="menu__body">
+                            <ul class="header__contacts contacts-header">
+                                <li class="contacts-header__item">
+                                    <a href="tel:74822691883" class="contacts-header__link"
+                                        >+7 (482) 269-18-83</a
+                                    >
+                                </li>
+                                <li class="contacts-header__item">
+                                    <a href="#" class="contacts-header__link">
+                                        <img src="/img/icons/whatsapp.svg" alt="whatsapp" />
+                                    </a>
+                                </li>
+                                <li class="contacts-header__item">
+                                    <a href="#" class="contacts-header__link">
+                                        <img src="/img/icons/tg.svg" alt="tg" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+					<button type="button" class="menu__icon icon-menu"><span></span><span></span><span></span></button>
 				</div>
+                <div class="header__stub"></div>
 			</div>
 		</header>
 		<!--HEADER -->
@@ -59,6 +66,10 @@
 						</div>
 						<div class="first__content content-first">
 							<div class="content-first__text">
+                                <h1>
+                                    ЖИЛОЙ КОМПЛЕКС <br />
+							        «НЕВСКИЙ»
+                                </h1>
 								<p>
 									Элегантный, визуально лёгкий и эстетичный фасад дополнен
 									уютными лоджиями с широкими окнами. Использование
@@ -139,7 +150,7 @@
 								Несомненное украшение города.
 							</p>
 						</div>
-						<a class="link" href="#">узнать больше</a>
+						<div class=" third__link"><a class="link link_up" href="#">узнать больше</a></div>
 					</div>
 				</div>
 			</section>
@@ -198,7 +209,7 @@
 							</div>
 						</div>
 						<div class="blocks-important__row">
-							<div class="blocks-important__content">
+							<div class="blocks-important__content blocks-important__content_thd">
 								<p>
 									Для жителей открыты
 									<span
@@ -226,292 +237,385 @@
 					<div class="catalog__title title">Каталог планировок</div>
 					<div class="catalog__info">
 						<p>
-							Современная квартира — это <span>функциональное пространство</span>,
-							максимально соответствующее требованиям своего владельца. Каждая
-							планировка ЖК «Невский» заранее продумана с учётом различных
-							сценариев использования. <span>
-                                Все внутриквартирные перегородки
-                                ненесущие.
-                            </span> Централизованная система кондиционирования.
+							Современная квартира — это
+							<span>функциональное пространство</span>, максимально
+							соответствующее требованиям своего владельца. Каждая планировка ЖК
+							«Невский» заранее продумана с учётом различных сценариев
+							использования.
+							<span> Все внутриквартирные перегородки ненесущие. </span>
+							Централизованная система кондиционирования.
 						</p>
-                        <a href="#" class="link link_und">узнать больше</a>
+						<a href="#" class="link link_und link_mb">узнать больше</a>
 					</div>
-                    <div class="catalog__inner">
-                        <div class="catalog__calculation">
-                            <div class="catalog__box">
-                                <div class="catalog__calculation-title ">Площадь</div>
-                                <div class="checkbox">
-                                    <div>
-                                        <input id="c_1" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-                                        <label for="c_1" class="checkbox__label"><span class="checkbox__text">35</span></label>
-                                    </div>
-                                    <div>
-                                        <input id="c_2" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-                                        <label for="c_2" class="checkbox__label"><span class="checkbox__text">48</span></label>
-                                    </div>
-                                    <div>
-                                        <input id="c_3" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-                                        <label for="c_3" class="checkbox__label"><span class="checkbox__text">52</span></label>
-                                    </div>
-                                    <div>
-                                        <input id="c_4" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-                                        <label for="c_4" class="checkbox__label"><span class="checkbox__text">60</span></label>
-                                    </div>
-                                    <div>
-                                        <input id="c_5" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-                                        <label for="c_5" class="checkbox__label"><span class="checkbox__text">70</span></label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="catalog__box">
-                                <div class="catalog__calculation-title ">Этаж</div>
-                                <div class="checkbox">
-                                    <div>
-                                        <input id="d_1" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-                                        <label for="d_1" class="checkbox__label"><span class="checkbox__text">1</span></label>
-                                    </div>
-                                    <div>
-                                        <input id="d_2" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-                                        <label for="d_2" class="checkbox__label"><span class="checkbox__text">2</span></label>
-                                    </div>
-                                    <div>
-                                        <input id="d_3" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-                                        <label for="d_3" class="checkbox__label"><span class="checkbox__text">3</span></label>
-                                    </div>
-                                    <div>
-                                        <input id="d_4" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-                                        <label for="d_4" class="checkbox__label"><span class="checkbox__text">4</span></label>
-                                    </div>
-                                    <div>
-                                        <input id="d_5" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
-                                        <label for="d_5" class="checkbox__label"><span class="checkbox__text">5</span></label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="catalog__box catalog__box_fl">
-                                <div class="catalog__calculation-title ">Цена</div>
-                                <div>
-                                    <input type="text">
-                                    <span>-</span>
-                                    <input type="text">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="catalog__images">
-                            <div class="catalog__image">
-                                <img src="/img/catalog/01.jpg" alt="layout">
-                            </div>
-                            <div class="catalog__image">
-                                <img src="/img/catalog/02.jpg" alt="layout">
-                            </div>
-                            <div class="catalog__image">
-                                <img src="/img/catalog/03.jpg" alt="layout">
-                            </div>
-                            <div class="catalog__image">
-                                <img src="/img/catalog/04.jpg" alt="layout">
-                            </div>
-                            <div class="catalog__image">
-                                <img src="/img/catalog/05.jpg" alt="layout">
-                            </div>
-                            <div class="catalog__image">
-                                <img src="/img/catalog/06.jpg" alt="layout">
-                            </div>
-                            
-                        </div>
-                        
-                    </div>
-                    
+					<div class="catalog__inner">
+						<div class="catalog__calculation">
+							<div class="catalog__box">
+								<div class="catalog__calculation-title">Площадь</div>
+								<div class="checkbox">
+									<div>
+										<input
+											id="c_1"
+											class="checkbox__input"
+											type="checkbox"
+											value="1"
+											name="form[]"
+										/>
+										<label for="c_1" class="checkbox__label"
+											><span class="checkbox__text">35</span></label
+										>
+									</div>
+									<div>
+										<input
+											id="c_2"
+											data-error="Помилка"
+											class="checkbox__input"
+											type="checkbox"
+											value="1"
+											name="form[]"
+										/>
+										<label for="c_2" class="checkbox__label"
+											><span class="checkbox__text">48</span></label
+										>
+									</div>
+									<div>
+										<input
+											id="c_3"
+											class="checkbox__input"
+											type="checkbox"
+											value="1"
+											name="form[]"
+										/>
+										<label for="c_3" class="checkbox__label"
+											><span class="checkbox__text">52</span></label
+										>
+									</div>
+									<div>
+										<input
+											id="c_4"
+											class="checkbox__input"
+											type="checkbox"
+											value="1"
+											name="form[]"
+										/>
+										<label for="c_4" class="checkbox__label"
+											><span class="checkbox__text">60</span></label
+										>
+									</div>
+									<div>
+										<input
+											id="c_5"
+											class="checkbox__input"
+											type="checkbox"
+											value="1"
+											name="form[]"
+										/>
+										<label for="c_5" class="checkbox__label"
+											><span class="checkbox__text">70</span></label
+										>
+									</div>
+								</div>
+							</div>
+							<div class="catalog__box">
+								<div class="catalog__calculation-title">Этаж</div>
+								<div class="checkbox">
+									<div>
+										<input
+											id="d_1"
+											class="checkbox__input"
+											type="checkbox"
+											value="1"
+											name="form[]"
+										/>
+										<label for="d_1" class="checkbox__label"
+											><span class="checkbox__text">1</span></label
+										>
+									</div>
+									<div>
+										<input
+											id="d_2"
+											class="checkbox__input"
+											type="checkbox"
+											value="1"
+											name="form[]"
+										/>
+										<label for="d_2" class="checkbox__label"
+											><span class="checkbox__text">2</span></label
+										>
+									</div>
+									<div>
+										<input
+											id="d_3"
+											class="checkbox__input"
+											type="checkbox"
+											value="1"
+											name="form[]"
+										/>
+										<label for="d_3" class="checkbox__label"
+											><span class="checkbox__text">3</span></label
+										>
+									</div>
+									<div>
+										<input
+											id="d_4"
+											class="checkbox__input"
+											type="checkbox"
+											value="1"
+											name="form[]"
+										/>
+										<label for="d_4" class="checkbox__label"
+											><span class="checkbox__text">4</span></label
+										>
+									</div>
+									<div>
+										<input
+											id="d_5"
+											class="checkbox__input"
+											type="checkbox"
+											value="1"
+											name="form[]"
+										/>
+										<label for="d_5" class="checkbox__label"
+											><span class="checkbox__text">5</span></label
+										>
+									</div>
+								</div>
+							</div>
+							<div class="catalog__box catalog__box_fl">
+								<div class="catalog__calculation-title">Цена</div>
+								<div>
+									<input type="text" />
+									<span>-</span>
+									<input type="text" />
+								</div>
+							</div>
+                            <button class="catalog__button">
+                                Применить
+                            </button>
+						</div>
+						<div class="catalog__images">
+							<div class="catalog__image">
+								<img src="/img/catalog/01.jpg" alt="layout" />
+							</div>
+							<div class="catalog__image">
+								<img src="/img/catalog/02.jpg" alt="layout" />
+							</div>
+							<div class="catalog__image">
+								<img src="/img/catalog/03.jpg" alt="layout" />
+							</div>
+							<div class="catalog__image">
+								<img src="/img/catalog/04.jpg" alt="layout" />
+							</div>
+							<div class="catalog__image">
+								<img src="/img/catalog/05.jpg" alt="layout" />
+							</div>
+							<div class="catalog__image">
+								<img src="/img/catalog/06.jpg" alt="layout" />
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 			<!--  CATALOG BLOCK -->
 
 			<!-- PARTNERS BLOCK -->
+
 			<section class="partners">
-				<div class="container ">
+				<div class="container">
 					<div class="partners__header">
 						<div class="partners__title title">Банки-партнеры</div>
-						<a href="#" class="link link_und">заказать звонок</a>
+						<a href="#" class="link link_und link_mb">заказать звонок</a>
 					</div>
 					<div class="partners__block">
-                        <div class="partners__slider">
-                            <div class="swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                                            <img src="/img/partners/sber.png" alt="partner">
-                                                        </div>
-                                    <div class="swiper-slide">
-                                                            <img src="/img/partners/alfa.png" alt="partner">
-                                                        </div>
-                                    <div class="swiper-slide">
-                                                            <img src="/img/partners/tbank.png" alt="partner">
-                                                        </div>
-                                    <div class="swiper-slide">
-                                                            <img src="/img/partners/sber.png" alt="partner">
-                                                        </div>
-                                    <div class="swiper-slide">
-                                                            <img src="/img/partners/alfa.png" alt="partner">
-                                                        </div>
-                                    <div class="swiper-slide">
-                                                            <img src="/img/partners/tbank.png" alt="partner">
-                                                        </div>
-                        
-                                </div>
-                        
-                            </div>
-                        </div>
-                        <div class="prev">
-                            <img src="/img/partners/prev.svg" alt="arrow">
-                        </div>
-                        <div class="next">
-                            <img src="/img/partners/next.svg" alt="arrow">
-
-                        </div>
-                    </div>
+						<div class="partners__slider">
+							<div class="swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<img src="/img/partners/sber.png" alt="partner" />
+									</div>
+									<div class="swiper-slide">
+										<img src="/img/partners/alfa.png" alt="partner" />
+									</div>
+									<div class="swiper-slide">
+										<img src="/img/partners/tbank.png" alt="partner" />
+									</div>
+									<div class="swiper-slide">
+										<img src="/img/partners/sber.png" alt="partner" />
+									</div>
+									<div class="swiper-slide">
+										<img src="/img/partners/alfa.png" alt="partner" />
+									</div>
+									<div class="swiper-slide">
+										<img src="/img/partners/tbank.png" alt="partner" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="prev">
+							<img src="/img/partners/prev.svg" alt="arrow" />
+						</div>
+						<div class="next">
+							<img src="/img/partners/next.svg" alt="arrow" />
+						</div>
+					</div>
+                    <div  class="partners__link"><a href="#" class="link link_und link_mb">заказать звонок</a></div>
 				</div>
 			</section>
 			<!-- PARTNERS BLOCK -->
-             <!-- CERTIFICATES -->
-              <section class="certificates">
-                <div class="certificates__wrapper">
-                    <div class="certificates__content">
-                        <div class="certificates__box">
-                            <p>сертификаты</p>
-                            <p>лицензии</p>
-                        </div>
-                        <h2 class="certificates__title title">Уверенное лидерство в Твери в кирпичном домостроении, 27 реализованных проектов</h2>
-                        <div class="line"></div>
-                        
-                    </div>
-                    <div class="certificates__image">
-                        <img src="/img/07.jpg" alt="img">
-                    </div>
-                    
-                    
-                </div>
 
+			<!-- CERTIFICATES -->
+			<section class="certificates">
+				<div class="certificates__wrapper">
+					<div class="certificates__content">
+						<div class="certificates__box">
+							<p>сертификаты</p>
+							<p>лицензии</p>
+						</div>
+						<h2 class="certificates__title title">
+							Уверенное лидерство в Твери в кирпичном домостроении, 27
+							реализованных проектов
+						</h2>
+						<div class="line"></div>
+					</div>
+					<div class="certificates__image">
+						<img src="/img/07.jpg" alt="img" />
+					</div>
+				</div>
 
+				<div class="container">
+					<div class="certificates__inner inner-certificates">
+						<h5 class="inner-certificates_title">
+							Наши преимущества <br />
+							и карта проектов:
+						</h5>
+						<div>
+							<ul>
+								<li>
+									Высокие<span> потолки:</span> свыше <span>3м </span>от стяжки
+									пола
+								</li>
+								<li>
+									<span>Энергосберегающее остекление:</span> 5-ти камерный
+									профиль ПВХ 70 мм, 2-х камерный стеклопакет
+								</li>
+								<li><span>IP-домофон</span></li>
+								<li>
+									<span>Качественная отделка</span> мест общего пользования:
+									лестничные марши и пол — керамогранит, стены — окрашены,
+									инфракрасные обогреватели, датчики движения для освещения
+								</li>
+								<li>
+									<span>Ненесущие внутриквартирные перегородки</span> из кирпича
+								</li>
+							</ul>
+							<ul>
+								<li>
+									Толщина наружных стен <span>750мм:</span> кирпич+ базальтовый
+									утеплитель+ вентилируемый фасад
+								</li>
+								<li>Толщина стен между квартирами <span>380мм</span></li>
+								<li>Поквартирное <span>газовое отопление</span></li>
+								<li>
+									<span>Безопасное и надёжное лифтовое оборудование ОТИС:</span>
+									плавное и малошумное движение кабины, комфортность поездки,
+									экономия потребления электроэнергии, соответствие нормам
+									пожарной безопасности, видеоконтроль
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- CERTIFICATES -->
+			<!-- MAP -->
+			<section class="map">
+				<div id="map"></div>
+			</section>
 
-
-                <div class="container">
-
-                    <div class="certificates__inner inner-certificates">
-                        <h5 class="inner-certificates_title">Наши преимущества <br> и карта проектов:</h5>
-                        <div>
-                            <ul>
-                                <li>Высокие<span> потолки:</span> свыше <span>3м </span>от стяжки пола</li>
-                                <li><span>Энергосберегающее остекление:</span> 5-ти камерный профиль ПВХ 70 мм, 2-х камерный стеклопакет</li>
-                                <li><span>IP-домофон</span></li>
-                                <li><span>Качественная отделка</span> мест общего пользования: лестничные марши и пол — керамогранит, стены — окрашены, инфракрасные обогреватели, датчики движения для освещения</li>
-                                <li><span>Ненесущие внутриквартирные перегородки</span> из кирпича</li>
-                            </ul>
-                            <ul>
-                                <li>Толщина наружных стен <span>750мм:</span> кирпич+ базальтовый утеплитель+ вентилируемый фасад</li>
-                                <li>Толщина стен между квартирами <span>380мм</span></li>
-                                <li>Поквартирное <span>газовое отопление</span></li>
-                                <li><span>Безопасное и надёжное лифтовое оборудование ОТИС:</span> плавное и малошумное движение кабины, комфортность поездки, экономия потребления электроэнергии, соответствие нормам пожарной безопасности, видеоконтроль</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                
-              </section>
-             <!-- CERTIFICATES -->
-              <!-- MAP -->
-                <section class="map">
-                    <div id="map"></div>
-                </section>
-  
-              <!-- MAP -->
-               <!-- CONTACTS -->
-                <section class="contacts">
-                    <div class="contacts__wrapper">
-                        <div class="container">
-                            <div class="contacts__inner">
-                                <h2 class="contacts__title title">оставьте заявку и мы свяжемся с вами</h2>
-                                <form action="#" class="contacts__form" id="contactForm">
-                                    <div class="contacts__name">
-                                        <input id="name" type="text" placeholder="ФИО" required >
-                                        <label for="name">ФИО<sup>*</sup></label>
-                                    </div>
-                                    <div class="contacts__phone">
-                                        <input id="phone" type="tel" placeholder="+7 000 000 00 00" required>
-                                        <label for="phone">Телефон<sup>*</sup></label>
-                                    </div>
-                                    <div class="contacts__email">
-                                        <input id="email" type="email" placeholder="name@mail.ru">
-                                        <label for="email">E-mail</label>
-                                    </div>
-                                    <div class="contacts__message">
-                                        <input id="message" type="text" placeholder="Укажите здесь">
-                                        <label for="message">В какое время Вам позвонить?</label>
-                                    </div>
-                                    <button class="contacts__button link link_und" type="submit">
-                                       Оставить заявку
-                                    </button>
-                                </form>
-                                
-                            
-                                
-                            </div>
-                        </div>
-                    </div>
-                </section>
-               <!-- CONTACTS -->
-             
+			<!-- MAP -->
+			<!-- CONTACTS -->
+			<section class="contacts">
+				<div class="contacts__wrapper">
+					<div class="container">
+						<div class="contacts__inner">
+							<h2 class="contacts__title title">
+								оставьте заявку и мы свяжемся с вами
+							</h2>
+							<form action="#" class="contacts__form" id="contactForm">
+								<div class="contacts__name">
+									<input id="name" type="text" placeholder="ФИО" required />
+									<label for="name">ФИО<sup>*</sup></label>
+								</div>
+								<div class="contacts__phone">
+									<input
+										id="phone"
+										type="tel"
+										placeholder="+7 000 000 00 00"
+										required
+									/>
+									<label for="phone">Телефон<sup>*</sup></label>
+								</div>
+								<div class="contacts__email">
+									<input id="email" type="email" placeholder="name@mail.ru" />
+									<label for="email">E-mail</label>
+								</div>
+								<div class="contacts__message">
+									<input id="message" type="text" placeholder="Укажите здесь" />
+									<label for="message">В какое время Вам позвонить?</label>
+								</div>
+								<button class="contacts__button link link_und" type="submit">
+									Оставить заявку
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- CONTACTS -->
 		</main>
-        <!-- FOOTER -->
-    
-		<footer class="footer">
-          
-                <div class="footer__top">
-                    <div class="container">
-                        <div class="footer__wrapper">
-                            <div class="footer__socials">
-                                <div>
-                                    <a href="#" class="footer__social">
-                                        <img src="/img/icons/whatsapp.svg" alt="whatsapp">
-                                    </a>
-                                    <a href="#" class="footer__social">
-                                        <img src="/img/icons/tg.svg" alt="tg">
-                                    </a>
-                                </div>
-                                <a href="tel:74822691883" class="footer__link">+7 (482) 269-18-83</a>
-                            </div>
-                            <a href="#" class="footer__logo">
-                                <img src="/img/logo-big.svg" alt="logo">
-                            </a>
-                            <nav>
-                                <ul>
-                                    <li><a href="#"></a>Главная</li>
-                                    <li><a href="#"></a>Каталог планировок</li>
-                                    <li><a href="#"></a>Банки-партнеры</li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="footer__bottom">
-                    <div class="container">
-                        <footer class="footer__box">
-                            <div class="footer__copyright">
-                                © 2024 ТДС Все права защищены
-                            </div>
-                            <div class="footer__policy">
-                                <a href="#">Политика обработки персональных данных</a>
-                              </div>
-                        </footer>
-                    </div>
-        
-                </div>
-                
-          
-        
-            
+		<!-- FOOTER -->
 
-        </footer>
- <!-- FOOTER -->
+		 <footer class="footer">
+			<div class="footer__top">
+				<div class="container">
+					<div class="footer__wrapper">
+						<div class="footer__socials">
+							<div>
+								<a href="#" class="footer__social">
+									<img src="/img/icons/whatsapp.svg" alt="whatsapp" />
+								</a>
+								<a href="#" class="footer__social">
+									<img src="/img/icons/tg.svg" alt="tg" />
+								</a>
+							</div>
+							<a href="tel:74822691883" class="footer__link"
+								>+7 (482) 269-18-83</a
+							>
+						</div>
+						<a href="#" class="footer__logo">
+							<img src="/img/logo-big.svg" alt="logo" />
+						</a>
+						<nav>
+							<ul>
+								<li><a href="#"></a>Главная</li>
+								<li><a href="#"></a>Каталог планировок</li>
+								<li><a href="#"></a>Банки-партнеры</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="container">
+					<footer class="footer__box">
+						<div class="footer__copyright">© 2024 ТДС Все права защищены</div>
+						<div class="footer__policy">
+							<a href="#">Политика обработки персональных данных</a>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</footer> 
+		<!-- FOOTER -->
 		<script type="module" src="/js/main.js"></script>
 	</body>
 </html>

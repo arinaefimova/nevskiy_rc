@@ -1,124 +1,177 @@
 .third {
-    margin: 110px 0;
-   
-    position: relative;
-    &::before{
-        content:'';
-        position: absolute;
-        bottom: -48px;
-        right: 0;
-        width: 85%;
-        background: url('img/icons/third-line.svg') 0 0 no-repeat;
-        height: 48px;
+	margin: 110px 0;
+	position: relative;
+	@media (max-width: 1000px) {
+		margin: 60px 0;
+	}
+	@media (max-width: 768px) {
+		margin: 48px 0;
+	}
+	&::before {
+		content: "";
+		position: absolute;
+		bottom: -48px;
+		right: 0;
+		width: 85%;
+		background: url("img/icons/third-line.svg") 0 0 no-repeat;
+		height: 48px;
+		@media (max-width: 1280px) {
+			background: none;
+		}
+	}
 
-    }
-
-    &__wrapper {
-        display: flex;
+	&__wrapper {
+		display: flex;
 		align-items: flex-end;
-		gap: 0 40px;
-		padding-right: max(15px, calc((100% - 1240px) / 2));
-    }
+		gap: 25px 40px;
 
-    &__image {
-        width: 915px;
+		@media (min-width: 1280px) {
+			padding-left: max(15px, calc((100% - 1240px) / 2));
+		}
+		@media (max-width: 1280px) {
+			flex-direction: column;
+		}
+	}
+
+	&__image {
+		width: 915px;
 		position: relative;
-        padding-bottom: 43%;
+		padding-bottom: 48%;
+		@media (max-width: 1280px) {
+			width: 100%;
+			padding-bottom: 60%;
+		}
+		@media (max-width: 500px) {
+			padding-bottom: 85%;
+		}
 
 		img {
 			position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
 		}
-    }
+	}
 
-    &__content {
-        flex-shrink: 0;
+	&__content {
+		flex-shrink: 0;
 		width: calc(100% - 915px - 40px);
-        
-    }
+		@media (max-width: 1280px) {
+			width: 100%;
+			padding: 0 15px;
+		}
+	}
 
-    &__title {
-        margin-bottom: 32px;
-    }
+	&__title {
+		margin-bottom: 32px;
+		position: relative;
+		z-index: 5;
+		@media (max-width: 1400px) {
+			font-size: 50px;
+			line-height: 55px;
+		}
+		@media (max-width: 1280px) {
+			margin-top: -80px;
+			text-align: center;
+		}
+		@media (max-width: 780px) {
+			max-width: 500px;
+			margin-top: -130px;
+			margin: -135px auto 32px auto;
+		}
+		@media (max-width: 768px) {
+			margin-top: -60px;
+		}
+		@media (max-width: 390px) {
+			width: 300px;
+			margin-top: -80px;
+		}
+	}
 
-    &__list {
-        margin-bottom: 24px;
-      
-    }
+	&__list {
+		margin-bottom: 24px;
+	}
 
-    &__item {
-        font-size: 16px;
-        font-style: italic;
-        line-height: 18px;
-        position: relative;
-        padding-left: 32px;
-        
-        &:not(:last-child) {
-            margin-bottom: 16px;
-        }
-        &::before{
-            content:'';
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 24px;
-            height: 24px;
-            background-size: cover;
-        }
-        &_1{
-            &::before{
-                content:'';
-                background: url('img/icons/solar_ruler.svg') 0 0 no-repeat;
-            }
-            
-        }
-        &_2{
-            &::before{
-                content:'';
-                background: url('img/icons/building.svg') 0 0 no-repeat;
-            }
+	&__item {
+		font-size: 16px;
+		font-style: italic;
+		line-height: 18px;
+		position: relative;
+		padding-left: 32px;
 
-        }
-        &_3{
-            &::before{
-                content:'';
-                background: url('img/icons/ok.svg') 0 0 no-repeat;
-            }
+		&:not(:last-child) {
+			margin-bottom: 16px;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 24px;
+			height: 24px;
+			background-size: cover;
+		}
+		&_1 {
+			&::before {
+				content: "";
+				background: url("img/icons/solar_ruler.svg") 0 0 no-repeat;
+			}
+		}
+		&_2 {
+			&::before {
+				content: "";
+				background: url("img/icons/building.svg") 0 0 no-repeat;
+			}
+		}
+		&_3 {
+			&::before {
+				content: "";
+				background: url("img/icons/ok.svg") 0 0 no-repeat;
+			}
+		}
+		&_4 {
+			&::before {
+				content: "";
+				background: url("img/icons/trees.svg") 0 0 no-repeat;
+			}
+		}
+		&_5 {
+			&::before {
+				content: "";
+				background: url("img/icons/location.svg") 0 0 no-repeat;
+			}
+		}
+		@media (max-width: 768px) {
+			font-size: 16px;
+			line-height: 18px;
+		}
+	}
 
-        }
-        &_4{
-            &::before{
-                content:'';
-                background: url('img/icons/trees.svg') 0 0 no-repeat;
-            }
-
-        }
-        &_5{
-            &::before{
-                content:'';
-                background: url('img/icons/location.svg') 0 0 no-repeat;
-            }
-
-        }
-    }
-
-    &__text {
-        margin-bottom: 60px;
-        font-size: 16px;
-        line-height: 18px;
-        color: rgba(255, 255, 255, 0.7);
-        font-family: Nunito Sans;
-        font-weight: 300;
-        p{
-            &:not(:last-child) {
-                margin-bottom: 15px;
-            }
-        }
-    }
-}
-.title {
+	&__text {
+		margin-bottom: 60px;
+		font-size: 16px;
+		line-height: 18px;
+		color: rgba(255, 255, 255, 0.7);
+		font-family: Nunito Sans;
+		font-weight: 300;
+		p {
+			&:not(:last-child) {
+				margin-bottom: 15px;
+			}
+		}
+		@media (max-width: 1400px) {
+			margin-bottom: 30px;
+		}
+		@media (max-width: 768px) {
+			font-size: 14px;
+			line-height: 16px;
+		}
+	}
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 }
